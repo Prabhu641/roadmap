@@ -1,0 +1,110 @@
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+  }
+
+  body {
+      background: linear-gradient(135deg, #eef2f3, #8e9eab);
+      color: #333;
+      line-height: 1.6;
+  }
+
+  .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 2rem;
+  }
+
+  h1 {
+      text-align: center;
+      font-size: 2.5rem;
+      font-weight: 800;
+      color: #3b82f6;
+      margin-bottom: 2rem;
+      animation: fadeInDown 1s ease;
+  }
+
+  .section {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 1rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      border-left: 5px solid #3b82f6;
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.8s ease, transform 0.8s ease;
+  }
+
+  .section.visible {
+      opacity: 1;
+      transform: translateY(0);
+  }
+
+  .section h2 {
+      color: #1e40af;
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+  }
+
+  ul {
+      padding-left: 1.2rem;
+  }
+
+  ul li {
+      margin-bottom: 0.5rem;
+      list-style-type: disc;
+      position: relative;
+  }
+
+  .resources {
+      margin-top: 1rem;
+      font-size: 0.9rem;
+      color: #1e40af;
+  }
+
+  .resources a {
+      color: #3b82f6;
+      text-decoration: none;
+  }
+
+  @keyframes fadeInDown {
+      from {
+          opacity: 0;
+          transform: translateY(-20px);
+      }
+
+      to {
+          opacity: 1;
+          transform: translateY(0);
+      }
+  }
+
+  /* Footer Styling */
+  footer {
+
+      color: blue;
+      padding: 1rem;
+      text-align: center;
+      margin-top: 2rem;
+      border-radius: 0 0 1rem 1rem;
+  }
+
+  footer p {
+      font-size: 1rem;
+      margin: 0;
+  }
+
+  footer .love-icon {
+      font-size: 1.2rem;
+      color: #414eff;
+
+  }
+
+  footer a {
+      color: white;
+      text-decoration: underline;
+  }
